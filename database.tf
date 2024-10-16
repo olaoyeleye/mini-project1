@@ -7,7 +7,7 @@ resource "aws_db_subnet_group" "default" {
   }
 }
 
-resource "aws_db_instance" "default" {
+resource "aws_db_instance" "db" {
   allocated_storage    = 10
   db_name              = "mydb"
   engine               = "mysql"

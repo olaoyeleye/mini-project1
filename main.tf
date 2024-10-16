@@ -12,9 +12,6 @@ terraform {
     key    = "kensko/dev/terraform.tfstate"
   }
 }
-eu-west-2   s3  kensko/kensko/dev/terraform.tfstate
-eu-west-2   s3  kensko/kensko/prod/terraform.tfstate
-eu-west-2   s3  kensko/kensko/test/terraform.tfstate
 
 provider "aws" {
   region = var.aws_region
