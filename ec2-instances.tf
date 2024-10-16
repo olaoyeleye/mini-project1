@@ -1,4 +1,4 @@
-resource "aws_instance" "frontend-node-1" {
+resource "aws_instance" "frontend-1" {
   ami           = var.ami
   key_name      = var.key_name
   instance_type = "t2.micro"
@@ -27,7 +27,7 @@ resource "aws_instance" "backend-1" {
   }
 }
 
-resource "aws_instance" "MySQL-database" {
+resource "aws_instance" "MySQLdatabase" {
   ami           = var.ami
   key_name      = var.key_name
   instance_type = "t2.micro"
@@ -41,7 +41,7 @@ resource "aws_instance" "MySQL-database" {
   }
 }
 
-resource "aws_instance" "frontend-node-2" {
+resource "aws_instance" "frontend-2" {
   ami           = var.ami
   key_name      = var.key_name
   instance_type = "t2.micro"
